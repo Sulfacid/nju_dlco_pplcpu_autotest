@@ -1,0 +1,11 @@
+*
+
+!*/
+
+!.gitignore
+!img/
+!img/**
+!README.md
+!autotest.py
+!rpl.circ
+!testcase/
