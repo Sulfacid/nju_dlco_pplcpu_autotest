@@ -223,6 +223,9 @@ if __name__ == "__main__":
         # if idx < 14:
         #     continue
         if LOG: print(case)
+        if not RPL and case.has_ram_data():
+            if LOG: print("未启用 RPL，跳过")
+            continue
         load_testcase(case)
         raw = run_circ()
 
